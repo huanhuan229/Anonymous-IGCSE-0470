@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paper 1 Topical</title>
+    <style>
+        @keyframes colorGlow {
+            0% {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+            16% {
+                text-shadow: 0 0 10px #ff7f00, 0 0 20px #ff7f00, 0 0 30px #ff7f00;
+            }
+            33% {
+                text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00;
+            }
+            50% {
+                text-shadow: 0 0 10px #5B6E77, 0 0 20px #5B6E77, 0 0 30px #5B6E77;
+            }
+            66% {
+                text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff;
+            }
+            83% {
+                text-shadow: 0 0 10px #4b0082, 0 0 20px #4b0082, 0 0 30px #4b0082;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a3a52 0%, #2c5f8d 100%);
+            color: #ecf0f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            background: linear-gradient(90deg, #5B6E77 0%, #06b6d4 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.5em;
+            animation: colorGlow 4s ease-in-out infinite;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        li {
+            margin: 20px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #0f3a52 0%, #1a4d6d 100%);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-top: 3px solid #5B6E77;
+            border-bottom: 3px solid #06b6d4;
+            animation: slideIn 0.6s ease forwards;
+        }
+
+        li:nth-child(1) { animation-delay: 0.1s; }
+        li:nth-child(2) { animation-delay: 0.2s; }
+        li:nth-child(3) { animation-delay: 0.3s; }
+        li:nth-child(4) { animation-delay: 0.4s; }
+        li:nth-child(5) { animation-delay: 0.5s; }
+        li:nth-child(6) { animation-delay: 0.6s; }
+
+        li:hover {
+            background: linear-gradient(135deg, #1a4d6d 0%, #2a5f80 100%);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(91, 110, 119, 0.4);
+            border-top-color: #003d7a;
+            border-bottom-color: #5B6E77;
+        }
+
+        a {
+            color: #06b6d4;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        a::before {
+            content: "📄";
+            margin-right: 10px;
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(91, 110, 119, 0.6);
+        }
+
+        a:hover::before {
+            transform: rotate(-15deg) scale(1.2);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, #5B6E77 0%, #06b6d4 100%);
+            color: #0f2743;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(91, 110, 119, 0.3);
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: fit-content;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(91, 110, 119, 0.5);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Paper 1 Topical IGCSE</h1>
+    <ul>
+        <li><a href="Treaty of Versailles Topical Paper 1 Past Year Paper Questions 2025-2021.pdf">Was the Treaty of Versailles fair?</a></li>
+        <li><a href="League of Nations Topical Paper 1 Past Year Paper Questions 2025-2021.pdf">To what extent was the League of Nations a success?</a></li>
+        <li><a href="Hitler’s Foreign Policy Topical Paper 1 Past Year Paper Questions 2025-2021.pdf">How far was Hitler’s foreign policy to blame for the outbreak of war in Europe in 1939?</a></li>
+        <li><a href="Cold War Topical Paper 1 Past Year Paper Questions 2025-2021.pdf">Who was to blame for the Cold War?</a></li>
+        <li><a href="US Containment of Communism Topical Paper 1 Past Year Paper Questions 2025-2021.pdf">How effectively did the United States contain the spread of communism?</a></li>
+        <li><a href="USSR’s Control Over Eastern Europe Topical Paper 1 Past Year Paper Questions 2025-2021.pdf">How secure was the USSR’s control over Eastern Europe, 1948–c.1989?</a></li>
+    </ul>
+
+        <a href="paper1.html" class="back-link">← Back to Paper 1</a>
+    </div>
+</body>
+</html>

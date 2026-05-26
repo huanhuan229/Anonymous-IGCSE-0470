@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Was the Treaty of Versailles fair? IGCSE Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        @keyframes colorGlow {
+            0% {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+            16% {
+                text-shadow: 0 0 10px #ff7f00, 0 0 20px #ff7f00, 0 0 30px #ff7f00;
+            }
+            33% {
+                text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00;
+            }
+            50% {
+                text-shadow: 0 0 10px #5B6E77, 0 0 20px #5B6E77, 0 0 30px #5B6E77;
+            }
+            66% {
+                text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff;
+            }
+            83% {
+                text-shadow: 0 0 10px #4b0082, 0 0 20px #4b0082, 0 0 30px #4b0082;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a3a52 0%, #2c5f8d 100%);
+            color: #ecf0f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        body::before {
+            content: "Mr Anonymous 0470";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 5.5rem;
+            font-weight: 900;
+            font-family: 'Roboto Mono', monospace;
+            color: rgba(91, 110, 119, 0.05); 
+            white-space: nowrap;
+            letter-spacing: 6px;
+            pointer-events: none; 
+            z-index: -1; 
+            user-select: none; 
+        }
+
+        h1 {
+            background: linear-gradient(90deg, #5B6E77 0%, #06b6d4 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.5em;
+            animation: colorGlow 4s ease-in-out infinite;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #5B6E77;
+            font-size: 1.8em;
+            text-shadow: 0 0 10px rgba(91, 110, 119, 0.5);
+            margin-top: 30px;
+            scroll-margin-top: 20px;
+        }
+
+        h4 {
+            color: #e0f2fe;
+            line-height: 1.8;
+            font-size: 1em;
+            padding: 10px;
+            padding-left: 20px;
+            border-left: 4px solid #003d7a;
+            background: rgba(15, 58, 82, 0.3);
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        h5 {
+            color: #999;
+            font-size: 0.9em;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(91, 110, 119, 0.3);
+            margin: 15px 0;
+            display: block;
+        }
+
+        summary {
+            cursor: pointer;
+            font-size: 1.17em;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: #06b6d4;
+            outline: none;
+            padding: 12px;
+            background: rgba(15, 58, 82, 0.5);
+            border-radius: 6px;
+            border-left: 4px solid #5B6E77;
+            transition: all 0.3s ease;
+        }
+        
+        summary:hover {
+            color: #fff;
+            background: rgba(15, 58, 82, 0.8);
+            box-shadow: 0 4px 10px rgba(91, 110, 119, 0.3);
+            transform: translateX(5px);
+        }
+
+        details {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: linear-gradient(135deg, rgba(15, 58, 82, 0.4) 0%, rgba(30, 60, 82, 0.4) 100%);
+            border-radius: 8px;
+            border-left: 5px solid #5B6E77;
+            transition: all 0.3s ease;
+            scroll-margin-top: 20px;
+        }
+
+        details[open] {
+            background: linear-gradient(135deg, rgba(15, 58, 82, 0.6) 0%, rgba(30, 60, 82, 0.6) 100%);
+            box-shadow: 0 4px 12px rgba(91, 110, 119, 0.2);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        br {
+            line-height: 2;
+        }
+
+        .toc {
+            background: linear-gradient(135deg, rgba(15, 58, 82, 0.6) 0%, rgba(30, 60, 82, 0.6) 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #003d7a;
+        }
+
+        .toc h3 {
+            color: #06b6d4;
+            margin-top: 0;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .toc a {
+            display: block;
+            color: #06b6d4;
+            text-decoration: none;
+            padding: 8px 0;
+            padding-left: 15px;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .toc a:hover {
+            color: #fff;
+            border-left-color: #003d7a;
+            transform: translateX(5px);
+        }
+
+        .toc a.sub {
+            padding-left: 35px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Was the Treaty of Versailles fair? IGCSE Notes</h1>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <a href="#terms">Terms of the Treaty of Versailles</a>
+            <a href="#military" class="sub">Germany's military reduction</a>
+            <a href="#guiltclause" class="sub">War Guilt Clause</a>
+            <a href="#reparations" class="sub">Reparations</a>
+            <a href="#territories" class="sub">Germany's territories and colonies</a>
+            <a href="#lmn" class="sub">League of Nations</a>
+            <a href="#bigthree">The Big Three</a>
+            <a href="#wilson" class="sub">Wilson's Ideas</a>
+            <a href="#fourteenpoints" class="sub">The Fourteen Points</a>
+            <a href="#clemenceau" class="sub">Clemenceau's Ideas</a>
+            <a href="#lloyd" class="sub">Lloyd George's Ideas</a>
+            <a href="#agreements">Agreements and Disagreements</a>
+            <a href="#cwagrees" class="sub">Clemenceau and Wilson</a>
+            <a href="#lgwagrees" class="sub">Lloyd George and Wilson</a>
+            <a href="#clgagrees" class="sub">Clemenceau and Lloyd George</a>
+            <a href="#consequences">Consequences of the Treaty of Versailles</a>
+            <a href="#ruhr" class="sub">Occupation of the Ruhr and Hyperinflation</a>
+            <a href="#political" class="sub">Political Instability and Violence</a>
+            <a href="#fairness">Treaty of Versailles: Fair or Unfair?</a>
+        </div>
+
+        <img src="tov.jpg" width="600" height="400" alt="TOV">
+
+        <h4> - The Treaty of Versailles was signed on 28 June 1919.</h4>
+         
+        <h4>- Germans mostly viewed the treaty as being too harsh and severe, while the Allies (Clemenceau and Lloyd George) saw it as being fair and deserved, considering Germany’s heinous actions during WW1.</h4>
+
+
+        <br><br>
+        <h2 id="terms"><u>Terms of the Treaty of Versailles:</u></h2>
+
+        <details id="military">
+            <summary>Germany’s military reduction</summary>
+            <h4> - Germany was only allowed to have 100,000 troops and conscription was forbidden.</h4>
+            <h4> - Germany was also not allowed to have an air force, submarines, but the German navy was allowed to keep 6 battleships and 15,000 sailors only.</h4>
+            <h4> - The Rhineland (Border between France and Germany) was also forced to be demilitarised.</h4>
+            <h4> - As a result, Germany grew angry, because Germans saw their military as a source of pride and nationalism, and it was being taken away from them.</h4>
+        </details>
+
+        <details id="guiltclause">
+            <summary>War Guilt Clause</summary>
+            <h4> - Germany had to acknowledge Article 231 of the Treaty of Versailles, where Germany had to accept the war guilt clause of starting World War I in the first place.</h4>
+            <h4> - Germans felt infuriated and thought that it was unfair they had to accept the entire blame.</h4>
+        </details>
+
+        <details id="reparations">
+            <summary>Reparations</summary>
+            <h4>- Germany was forced to pay 6,600 million pounds (132 billion marks) to the allies as reparations for the damages inflicted by Germany on countries.</h4>
+            <h4>- Germans felt the reparations were too harsh and they couldn’t afford it, due to their collapsing economy, damaged infrastructure, and military debts from the Great War.</h4>
+        </details>
+
+        <details id="territories">
+            <summary>Germany’s territories and colonies</summary>
+            <img src="german-territorial-losses-1919-1945-v0-p9uuo1owjh1a1.jpg" width="500" height="420" alt="German territories">
+            <h5><i> Caption: Credits to PatientBuilder499 on r/MapPorn for the image above</i></h5>
+            <h4>- Germany’s colonies in Africa and Asia were seized by the allies, as part of the terms of the Treaty of Versailles.</h4>
+            <h4>- Germany’s African colonies were held under Britain’s and France’s control, where colonies became mandates of the newly-established League of Nations.</h4>
+            <h4>- Germany’s colonies in Asia were mainly given to Japan for their contribution to the war against the Central Powers.</h4> 
+            <h4>- Germany’s territories (eg: Polish Corridor, Upper Silesia, Alsace Lorraine) were given to France, newly formed nations of Poland and Czechoslovakia, and other more.</h4>
+        </details>
+
+        <details id="lmn">
+            <summary>League of Nations</summary>
+            <h4>- The League of Nation was formed to promote international cooperation and preserve peace around the world, preventing any future wars.</h4>
+            <h4>- Germany was not allowed to join until it could show that it was a peace-loving country.</h4>
+        </details>
+
+
+        <br><br>
+        <h2 id="bigthree"><u>The Big Three</u></h2>
+        <img src="The Big Three.jpg" width="500" height="400" alt="The Big Three">
+        <h5><i> Caption: Credits to Mr Allsop History for the image above</i></h5>
+        <h4>- The Big Three were:</h4>
+        <h4>- Lloyd George (Leader of Britain)</h4>
+        <h4>- Clemenceau (Leader of France)</h4>
+        <h4>- Woodrow Wilson (Leader of the USA)</h4>
+
+        <details id="wilson">
+            <summary>Wilson’s Ideas:</summary>
+            <h4>- Wanted to promote international cooperation among countries around the world.</h4>
+            <h4>- Wanted to set up the League of Nations to prevent future aggression and ensure countries would work together.</h4>
+            <h4>- Wilson promoted his Fourteen Points, which fully supported lasting peace and a fairer treaty for Germany, compared to the reality.</h4>
+        </details>
+
+        <details id="fourteenpoints">
+            <summary>The Fourteen Points included:</summary>
+            <h4>- Self-determination for people in Eastern European countries</h4>
+            <h4>- No secret treaties</h4>
+            <h4>- Free trade between countries</h4>
+            <h4>- Disarmament</h4>
+            <h4>- Colonies to have a say in their own future</h4>
+            <h4>- Creation of the League of Nations</h4>
+            <h4>- Free access to the sea</h4>
+            <h4>- German troops to leave Russia</h4>
+            <h4>- German troops to leave Belgium</h4>
+            <h4>- France to regain Alsace-Lorraine</h4>
+            <h4>- Serbia to gain access to the sea</h4>
+            <h4>- Self-determination for people in the Ottoman Empire</h4>
+            <h4>- Poland to become an independent nation again</h4>
+            <h4>- The borders between Austria and Italy to be adjusted</h4>
+        </details>
+
+        <details id="clemenceau">
+            <summary>Clemenceau’s Ideas:</summary>
+            <h4>- Wanted Germany to be punished harshly in terms of the Treaty of Versailles.</h4>
+            <h4>- This is because Clemenceau wanted Germany to pay for the damages it had caused to France (France was invaded by Germany, and most of the fighting in the Western Front took place in France).</h4>
+            <h4>- Clemenceau proposed to impose a larger amount of reparations for Germany to compensate the Allies.</h4>
+            <h4>- Clemenceau wanted the Rhineland to be demilitarised, to act as a barrier between Germany and France, and to prevent any future potential invasions from Germany.</h4>
+            <h4>- Clemenceau also demanded that Germany’s territories be reduced and split into smaller territories, so that Germany would not be able to reunify to invade its neighbours (primarily France), although this idea would be scrapped by him, because he knew Lloyd George and Wilson would not agree to it.</h4>
+            <h4>- He also wanted to disarm Germany’s military, so that they would no longer have the power to invade France in the future.</h4>
+        </details>
+
+        <details id="lloyd">
+            <summary>Lloyd George’s Ideas:</summary>
+            <h4>- Wanted to punish Germany harshly to satisfy the British public, as the British people were fed with anti-German propaganda, and had wanted Germany to be punished severely.</h4>
+            <h4>- However, Lloyd George did not want Germany to be also treated harshly, because he did not want to lose Britain’s largest trading partner(Germany).</h4>
+            <h4>- It would only cause rising unemployment and a collapse in Britain’s economy.</h4>
+            <h4>- Lloyd George mainly focused on Wilson’s Fourteen Points that were affecting or involved Britain’s colonial ambitions and its navy.</h4>
+        </details>
+
+
+        <br><br>
+        <h2 id="agreements"><u>Agreements and Disagreements between Clemenceau, Wilson, and Lloyd George</u></h2>
+
+        <details id="cwagrees">
+            <summary>Clemenceau and Wilson</summary>
+            <h4>- Clemenceau wanted Germany to be punished harshly in the treaty, while Wilson seemed to be more sympathetic and less merciless to Germany.</h4>
+            <h4>- This is because the US had only joined the war in 1917 and had not received as much damage as France had received.</h4>
+            <h4>- When Clemenceau demanded that the Rhineland should gain independence, so that it could act as a barrier between France and Germany for security.</h4> 
+            <h4>- However, Wilson did not agree because he believed in self-determination, and it felt wrong to seize the Rhineland from German territory.</h4>
+            <h4>- Clemenceau also demanded that Germany should pay a higher reparations amount than the original amount.</h4>
+            <h4>- But, Wilson did not agree, fearing that it would only result in a collapse of the German economy and it would ignite a communist revolution - something both Wilson and Lloyd George feared.</h4>
+            <h4>- Both Clemenceau and Wilson had arguments over with the coalfields in the Saar region in Germany.</h4>
+            <h4>- Clemenceau wanted to seize the Saar region, as a way of compensation for the damages Germany caused during the war.</h4>
+            <h4>- However, Wilson disagreed, over the fact that it was against his idea of self-determination.</h4>
+        </details>
+
+        <details id="lgwagrees">
+            <summary>Lloyd George and Wilson</summary>
+            <h4>- Lloyd George was primarily unavailable with few of Wilson’s Fourteen Points, which were allowing nations to have access to the sea.</h4>
+            <h4>- Lloyd George see this as a threat to the dominant British Empire, as he wanted the British navy to rule the sea, and did not want Germany or any other nations to compete with Britain.</h4>
+            <h4>- Lloyd George had also desired for a heavy disarmament, seeing Germany’s military and navy as a threat to Britain’s naval and military power.</h4>
+        </details>
+
+        <details id="clgagrees">
+            <summary>Clemenceau and Lloyd George</summary>
+            <h4>- Clemenceau felt it was selfish for Lloyd George to treat Germany fairly, as he wanted Germany to trade with Britain again.</h4>
+            <h4>- Meanwhile, Lloyd George wanted to disarm Germany as much as possible, since Germany’s navy was a threat to the British empire.</h4>
+        </details>
+
+
+        <br><br>
+        <h2 id="consequences"><u>Consequences of the Treaty of Versailles for Germany</u></h2>
+
+        <details id="ruhr">
+            <summary>Occupation of the Ruhr and Hyperinflation</summary>
+            <h4>- The reparations hit a huge toll on Germany’s economy - Germany couldn’t afford to pay for the reparations.</h4>
+            <h4>- As a result, when Germany stopped paying in 1922, French and Belgian troops entered the Ruhr region and seized coal and other raw materials as payment for the treaty. The Ruhr was occupied by the allies.</h4>
+            <h4>- The German government tried to order the workers to go on strike against the occupation by not working for the French to take resources.</h4>
+            <h4>- Consequently, France retaliated by killing over 100 workers.</h4>
+            <h4>- With no money left, it eventually caused hyperinflation in Germany, because the German government printed more money to fix the issue of not having enough money.</h4>
+        </details>
+
+        <details id="political">
+            <summary>Political Instability and Violence</summary>
+            <h4>- Due to the unfair military and reparations terms, it brought the rise of right-wing groups, attempting to overthrow the Weimar government (led by Ebert).</h4>
+            <h4>- An uprising (Spartacist Uprising) was led by the Communist Party of Germany, trying to overthrow the German government and replace it with a communist government. However, it failed, with the help of the Freikorps.</h4> 
+            <h4>- Another uprising (Kapp Putsch), which was led by the Freikorps, was held in an attempt to overthrow the government. It failed due to the disruption of transport by Berlin workers.</h4>
+            <h4>- In 1923, Hitler attempted to launch a coup in Bavaria, often known as the Beer Hall Putsch, in an attempt to take control of the Bavarian government and march all the way to Berlin. It eventually failed, and Hitler was arrested, although Hitler received a soft sentence in prison for 9 months.</h4>
+        </details>
+
+
+        <br><br>
+        <h2 id="fairness"><u>Treaty of Versailles: Fair or Unfair?</u></h2>
+
+        <details id="arguments">
+            <summary>Arguments and Perspectives</summary>
+            <h4>- Most German citizens saw the treaty as unfair, regarding how Germany shouldn’t have gotten the full blame for the war (Article 231 War Guilt Clause), and how gruesome the allies had been with punishing Germany with a harsh reparations, knowing that Germany couldn’t pay for it.</h4>
+            <h4>- On the other hand, the allies saw the treaty as being less harsh, viewing Germany had not suffer during the war, and was actually more powerful than it was in 1914.</h4>
+            <h4>- This was because neighbouring empires collapsed after WW1, and many new, weak countries were formed, allowing Germany to seize this as an opportunity to take over new countries (power vacuum).</h4>
+            <h4>- The allies also thought that Germany just didn’t want to pay for the reparations and wanted to cause a crisis, in order for the allies to consider revising the reparation terms of the treaty.</h4>
+            <h4>- Moreover, Germany’s economic issues were Germany’s fault, as the government had actually intentionally piled up the military debts accummulated during the war, so that Germany could pay for it after they had won the war using resources and rewards from allied countries.</h4>
+        </details>
+
+        <p><a href="paper1.html" style="display: inline-block; margin-top: 30px; padding: 12px 20px; background: linear-gradient(90deg, #5B6E77 0%, #06b6d4 100%); color: #0f2743; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(91, 110, 119, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 18px rgba(91, 110, 119, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(91, 110, 119, 0.3)'">← Back to Paper 1</a></p>
+    </div>
+</body>
+</html>

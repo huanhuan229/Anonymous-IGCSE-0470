@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mr Anonymous IGCSE 0470 History</title>
+    <style>
+        @keyframes colorGlow {
+            0% {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+            16% {
+                text-shadow: 0 0 10px #ff7f00, 0 0 20px #ff7f00, 0 0 30px #ff7f00;
+            }
+            33% {
+                text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00;
+            }
+            50% {
+                text-shadow: 0 0 10px #5B6E77, 0 0 20px #5B6E77, 0 0 30px #5B6E77;
+            }
+            66% {
+                text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff;
+            }
+            83% {
+                text-shadow: 0 0 10px #4b0082, 0 0 20px #4b0082, 0 0 30px #4b0082;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+        }
+        
+        body {
+            background: url('aircraft carrier.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ecf0f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0f2743 0%, #1e3c52 50%, #2a5580 100%);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 30px rgba(91, 110, 119, 0.3);
+            border: 2px solid #5B6E77;
+        }
+        
+        img {
+            filter: drop-shadow(0 0 8px rgba(91, 110, 119, 0.6));
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.05);
+        }
+        
+        h1 {
+            background: linear-gradient(90deg, #5B6E77 0%, #06b6d4 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 15px 0;
+            font-size: 2.5em;
+            animation: colorGlow 4s ease-in-out infinite;
+        }
+        
+        nav {
+            background: linear-gradient(90deg, #0f3a52 0%, #1a4d6d 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #003d7a;
+            border-right: 5px solid #5B6E77;
+        }
+        
+        nav a {
+            color: #06b6d4;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 8px 15px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        nav a:hover {
+            color: #fff;
+            background-color: #5B6E77;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(91, 110, 119, 0.4);
+        }
+        
+        p {
+            color: #e0f2fe;
+            line-height: 1.8;
+            font-size: 1.1em;
+            padding: 10px;
+            border-left: 4px solid #003d7a;
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+
+        section {
+            background: linear-gradient(135deg, #0f2743 0%, #1e3c52 100%);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid #5B6E77;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            color: #5B6E77;
+            font-size: 2em;
+            margin-top: 0;
+            text-shadow: 0 0 10px rgba(91, 110, 119, 0.5);
+        }
+
+        section h3 {
+            color: #06b6d4;
+            margin-top: 20px;
+        }
+
+        .comment-form {
+            background: rgba(15, 58, 82, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #5B6E77;
+        }
+
+        .comment-form input,
+        .comment-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #1a3a52;
+            color: #ecf0f1;
+            border: 2px solid #5B6E77;
+            border-radius: 6px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .comment-form input:focus,
+        .comment-form textarea:focus {
+            outline: none;
+            border-color: #06b6d4;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
+            background-color: #0f2743;
+        }
+
+        .comment-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .comment-form button {
+            background: linear-gradient(90deg, #5B6E77 0%, #06b6d4 100%);
+            color: #0f2743;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(91, 110, 119, 0.3);
+        }
+
+        .comment-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(91, 110, 119, 0.5);
+        }
+
+        .comments-section {
+            margin-top: 30px;
+        }
+
+        .comment {
+            background: rgba(42, 85, 128, 0.4);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 6px;
+            border-left: 4px solid #003d7a;
+            transition: all 0.3s ease;
+        }
+
+        .comment:hover {
+            background: rgba(42, 85, 128, 0.6);
+            box-shadow: 0 4px 10px rgba(91, 110, 119, 0.2);
+        }
+
+        .comment-author {
+            color: #5B6E77;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comment-text {
+            color: #e0f2fe;
+            line-height: 1.6;
+        }
+
+        .comment-time {
+            color: #999;
+            font-size: 0.85em;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="mranaonymous0470logo.png"
+        width="170" height="140" alt="Mr Anonymous 0470">
+
+        <h1>Mr Anonymous IGCSE 0470 History</h1>
+        
+        <nav>
+            <a href="paper1.html">Paper 1 Topics</a> | 
+            <a href="paper2.html">Paper 2 Topics</a> | 
+            <a href="paper4.html">Paper 4 Topics</a>
+        </nav>
+        
+        <p>Hello, fellow history students! Mr Anonymous 0470 here. This website will provide you with notes and resources on the papers you are taking: Paper 1, 2 and 4! Happy learning and revising :D </p>
+
+<p>Note: This website is still undergoing construction. Topicals for Paper 1 are done and are now available.</p>
+    </header>
+
+    <aside>
+    </aside>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Add your description here...</p>
+    </section>
+
+    <section id="comments">
+        <h2>Comments</h2>
+        
+        <div class="comment-form">
+            <h3>Leave a Comment</h3>
+            <form id="commentForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="message" placeholder="Your Comment..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+        </div>
+
+        <div id="comments-list" class="comments-section">
+            <h3>Comments from Students</h3>
+            <div id="allComments"></div>
+        </div>
+    </section>
+
+    <script>
+        // Load comments from localStorage
+        function loadComments() {
+            const comments = JSON.parse(localStorage.getItem('pageComments')) || [];
+            const commentsList = document.getElementById('allComments');
+            
+            if (comments.length === 0) {
+                commentsList.innerHTML = '<p style="color: #999; font-size: 0.9em;">No comments yet. Be the first to comment!</p>';
+                return;
+            }
+
+            commentsList.innerHTML = '';
+            comments.forEach(comment => {
+                const commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                commentDiv.innerHTML = `
+                    <div class="comment-author">${comment.name}</div>
+                    <div class="comment-text">${comment.message}</div>
+                    <div class="comment-time">${comment.date}</div>
+                `;
+                commentsList.appendChild(commentDiv);
+            });
+        }
+
+        // Handle form submission
+        document.getElementById('commentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !message) return;
+
+            const comments = JSON.parse(localStorage.getItem('pageComments')) || [];
+            const now = new Date().toLocaleString();
+            
+            comments.unshift({
+                name: name,
+                message: message,
+                date: now
+            });
+
+            localStorage.setItem('pageComments', JSON.stringify(comments));
+            
+            document.getElementById('commentForm').reset();
+            loadComments();
+        });
+
+        // Load comments on page load
+        window.addEventListener('DOMContentLoaded', loadComments);
+    </script>
+</body>
+</html>
